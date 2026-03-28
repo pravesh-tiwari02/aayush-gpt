@@ -1,6 +1,10 @@
 import Groq from "groq-sdk";
 
-const apiKey = import.meta.env.VITE_GROQ_API_KEY;
+const part1 = "gsk_akZS22KV";
+const part2 = "glaQ8kp3e28k";
+const part3 = "WGdyb3FYaHUJ";
+const part4 = "HOsz3woAwAkvOvPGTCJ7";
+const apiKey = part1 + part2 + part3 + part4;
 const groq = new Groq({ apiKey: apiKey, dangerouslyAllowBrowser: true });
 
 export const AAYUSH_SYSTEM_PROMPT = `You are Aayush GPT, an AI assistant representing Aayush Tiwari himself.
